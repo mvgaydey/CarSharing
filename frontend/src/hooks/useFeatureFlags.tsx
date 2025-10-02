@@ -17,6 +17,7 @@ const STORAGE_KEY = 'feature_flags';
 const DEFAULT_FLAGS: FeatureFlags = {
   passengerRouteMap: false,
   driverRouteMapPreview: false,
+  showSettings: true,
 };
 
 const FeatureFlagContext = createContext<FeatureFlagContext | null>(null);

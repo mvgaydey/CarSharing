@@ -98,6 +98,27 @@ export const Settings = () => {
                 <p className="setting-description">Показувати попередній перегляд карти для водія</p>
               </div>
             </List.Item>
+            <List.Item
+              className="settings-list-item"
+              prefix={<span className="settings-item-icon">⚙️</span>}
+              extra={
+                <Switch
+                  className="settings-switch"
+                  checked={isEnabled('showSettings')}
+                  onChange={(checked) => handleToggle('showSettings', checked)}
+                  style={{
+                    '--checked-color': 'var(--ridesafe-primary)',
+                    '--height': '28px',
+                    '--width': '54px',
+                  } as React.CSSProperties}
+                />
+              }
+            >
+              <div className="setting-item-content">
+                <p className="setting-title">Показувати налаштування</p>
+                <p className="setting-description">Показувати кнопку налаштування</p>
+              </div>
+            </List.Item>
           </List>
           <div className="settings-controls">
             <Button

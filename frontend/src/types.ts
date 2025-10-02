@@ -2,6 +2,7 @@
 export interface FeatureFlags {
   passengerRouteMap: boolean;
   driverRouteMapPreview: boolean;
+  showSettings: boolean;
 }
 
 export type FeatureFlagKey = keyof FeatureFlags;
