@@ -15,6 +15,7 @@ class HealthResponse(BaseModel):
 class FeatureFlagsResponse(BaseModel):
     passengerRouteMap: bool
     driverRouteMapPreview: bool
+    showSettings: bool
 
 
 class Coordinates(BaseModel):
@@ -41,6 +42,7 @@ class RidesResponse(BaseModel):
 FEATURE_FLAGS = FeatureFlagsResponse(
     passengerRouteMap=True,
     driverRouteMapPreview=False,
+    showSettings=True,
 )
 
 RIDES = [
